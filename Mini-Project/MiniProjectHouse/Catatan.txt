@@ -1,0 +1,36 @@
+date:           Tanggal rumah dijual.
+price:          Harga rumah, ini adalah kolom target yang akan kita prediksi.
+bedrooms:       Jumlah kamar tidur.
+bathrooms:      Jumlah kamar mandi.
+sqft_living:    Luas persegi kaki ruang tamu di dalam rumah.
+sqft_lot:       Luas persegi kaki lot (tanah) di mana rumah itu berada.
+floors:         Jumlah lantai di rumah.
+waterfront:     Sebuah variabel biner (0 atau 1) yang menunjukkan apakah rumah memiliki pemandangan ke arah air (danau, sungai, dll.).
+view:           Indikator seberapa bagus pemandangan dari rumah (misalnya, 0 untuk tidak ada, 4 untuk sangat bagus).
+condition:      Kondisi rumah (misalnya, 1 untuk sangat buruk, 5 untuk sangat baik).
+sqft_above:     Luas persegi kaki semua ruang di atas tanah.
+sqft_basement:  Luas persegi kaki ruang bawah tanah.
+yr_built:       Tahun rumah dibangun.
+yr_renovated:   Tahun rumah direnovasi. Jika nilainya 0, artinya rumah tidak pernah direnovasi.
+street: Alamat  jalan.
+city:           Kota.
+statezip:       Kode pos dan negara bagian.
+country:        Negara.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
