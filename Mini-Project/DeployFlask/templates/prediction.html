@@ -1,0 +1,79 @@
+{% extends 'index.html' %}
+
+{% block body %}
+    <h2 style="text-align: center;">Isi Data Kesehatanmu</h2>
+    <form action="/predict" method="post">
+        <label for="age">Age (Umur):</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="sex">Sex (Jenis Kelamin):</label>
+        <select id="sex" name="sex">
+            <option value="1">Laki-laki (1)</option>
+            <option value="0">Perempuan (0)</option>
+        </select>
+
+        <label for="cp">Chest Pain Type (Tipe Nyeri Dada):</label>
+        <select id="cp" name="cp">
+            <option value="0">Tipe 0</option>
+            <option value="1">Tipe 1</option>
+            <option value="2">Tipe 2</option>
+            <option value="3">Tipe 3</option>
+        </select>
+        
+        <label for="trestbps">Resting Blood Pressure (Tekanan Darah Istirahat):</label>
+        <input type="number" id="trestbps" name="trestbps" required>
+        
+        <label for="chol">Cholesterol (mg/dl):</label>
+        <input type="number" id="chol" name="chol" required>
+
+        <label for="fbs">Fasting Blood Sugar (Gula Darah Puasa > 120 mg/dl):</label>
+        <select id="fbs" name="fbs">
+            <option value="1">Ya (1)</option>
+            <option value="0">Tidak (0)</option>
+        </select>
+
+        <label for="restecg">Resting ECG (Hasil Elektrokardiogram Istirahat):</label>
+        <select id="restecg" name="restecg">
+            <option value="0">Normal (0)</option>
+            <option value="1">Abnormalitas Gelombang ST-T (1)</option>
+            <option value="2">Hipertrofi Ventrikel Kiri (2)</option>
+        </select>
+        
+        <label for="thalach">Max Heart Rate (Detak Jantung Maksimal):</label>
+        <input type="number" id="thalach" name="thalach" required>
+        
+        <label for="exang">Exercise Induced Angina (Angina Akibat Latihan):</label>
+        <select id="exang" name="exang">
+            <option value="1">Ya (1)</option>
+            <option value="0">Tidak (0)</option>
+        </select>
+        
+        <label for="oldpeak">Oldpeak (Depresi ST Relatif terhadap Istirahat):</label>
+        <input type="number" step="0.1" id="oldpeak" name="oldpeak" required>
+
+        <label for="slope">Slope of ST segment (Kemiringan Puncak ST):</label>
+        <select id="slope" name="slope">
+            <option value="0">Tipe 0</option>
+            <option value="1">Tipe 1</option>
+            <option value="2">Tipe 2</option>
+        </select>
+
+        <label for="ca">Number of Vessels (Jumlah Pembuluh Darah Utama):</label>
+        <select id="ca" name="ca">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+        <label for="thal">Thalium Stress Test (Hasil Uji Stres Thalium):</label>
+        <select id="thal" name="thal">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <button type="submit">Prediksi</button>
+    </form>
+{% endblock %}
